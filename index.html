@@ -6,6 +6,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
 <link rel="stylesheet" href="style.css" />
+<title>MrBeeBenson</title>
 </head>
 
 <body>
@@ -31,10 +32,14 @@ $('body').terminal({
         this.echo('\nI also actively work on and contribute to other open source projects, you will be able to find all contributions I have made on my GitHub profile.\nhttps://github.com/mrbeebenson');
     },
     refresh: function() {
+        this.echo('Refreshing...')
         location.reload();
+    },
+    posts: function() {
+        this.echo('Blog posts are currently not ported to the new website, you can find them at:\nhttps://mrbeebenson.github.io/old-website')
     }
 }, {
-    greetings: '/home/mrbeebenson \nType "help" for a list of commands\n\nWelcome to my website!'
+    greetings: '/home/mrbeebenson \nType "help" for a list of commands\n\nWelcome to my website!\n&bull; Please note that this website is currently in beta testing and does not currently work properly on Firefox Mobile.\nFor the original, working site please go to: https://mrbeebenson.github.io/old-website'
 });
 </script>
     
