@@ -6,25 +6,31 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
 <link rel="stylesheet" href="style.css" />
+<script src="main.js"></script>
 </head>
 
 <body>
 
-    <script>
-        $('body').terminal({
-            help: function() {
-                this.echo('\nHere is a list of commands:\nhelp - Displays help text\nclear - Clears the display\nabout - Displays information about MrBeeBenson');
-            },
-            about: function() {
-                this.echo('\nThis is my little home on the internet where I like to show off things I have written or created! Here I will likely talk about myself, anything relating to open-source software and GNU/Linux ecosystems and anything relating to software (including software I create myself!)');
-                this.echo('\nI am a software developer and information activist, I seek to promote accessible, reliable information about free and open source software in my blog posts and write-ups. I am 17 years old, and I am very passionate about computers and technology.');
-                this.echo('\nI first started learning website development in 2017 from school and fell in love with programming, from there I began to teach myself as much as I could. I was introduced to GNU/Linux and open source software in August 2020 and swapped from Windows 10 to Linux full-time in October 2020. I fell in love with open source software and the philosophy behind it.');
-                this.echo('\nI am the project lead and founder of Rolling Rhino Remix, a Linux distribution that converts Ubuntu into a rolling release.\nhttps://rollingrhino.org');
-            }
-        }, {
-            greetings: '/home/mrbeebenson \nType "help" for a list of commands\n\nWelcome to my website!'
-        });
-        </script>
-
+<script>
+        
+$('body').terminal({
+    help: function() {
+        this.echo('\nHere is a list of commands:\nhelp - Displays help text\nclear - Clears the display\nabout - Displays information about MrBeeBenson\nprojects - Displays information about my projects');
+    },
+    about: function() {
+        this.echo('\nThis is my little home on the internet where I like to show off things I have written or created! Here I will likely talk about myself, anything relating to open-source software and GNU/Linux ecosystems and anything relating to software (including software I create myself!)');
+        this.echo('\nI am a software developer and information activist, I seek to promote accessible, reliable information about free and open source software in my blog posts and write-ups. I am 17 years old, and I am very passionate about computers and technology.');
+        this.echo('\nI first started learning website development in 2017 from school and fell in love with programming, from there I began to teach myself as much as I could. I was introduced to GNU/Linux and open source software in August 2020 and swapped from Windows 10 to Linux full-time in October 2020. I fell in love with open source software and the philosophy behind it.');
+        this.echo('\nI am the project lead and founder of Rolling Rhino Remix, a Linux distribution that converts Ubuntu into a rolling release.\nhttps://rollingrhino.org');
+    },
+    projects: function() {
+        this.echo('\nMy projects:');
+        this.echo('\nRolling Rhino Remix\nhttps://rollingrhino.org\nI am the founder and current Project Lead of Rolling Rhino Remix. Rolling Rhino Remix is a Linux distribution that converts Ubuntu into a Rolling Release distribution. Rolling Rhino Remix has many distribution-specific features and utilities specifically created for the distribution.')
+    }
+}, {
+    greetings: '/home/mrbeebenson \nType "help" for a list of commands\n\nWelcome to my website!'
+});
+</script>
+    
 </body>
 </html>
