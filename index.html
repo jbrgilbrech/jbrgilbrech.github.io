@@ -15,7 +15,7 @@
         
 $('body').terminal({
     help: function() {
-        this.echo('\nHere is a list of commands:\nhelp - Displays help text\nclear - Clears the display\nrefresh - Refreshes the terminal (webpage)\nabout - Displays information about MrBeeBenson\nprojects - Displays information about my projects');
+        this.echo('\nHere is a list of commands:\nhelp - Displays help text\nclear - Clears the display\nrefresh - Refreshes the terminal (webpage)\nexit - Closes the terminal (webpage)\nabout - Displays information about MrBeeBenson\nprojects - Displays information about my projects\ncontact - Provides my contact information');
     },
     about: function() {
         this.echo('\nThis is my little home on the internet where I like to show off things I have written or created! Here I will likely talk about myself, anything relating to open-source software and GNU/Linux ecosystems and anything relating to software (including software I create myself!)');
@@ -37,6 +37,12 @@ $('body').terminal({
     },
     posts: function() {
         this.echo('Blog posts are currently not ported to the new website, you can find them at:\nhttps://mrbeebenson.github.io/old-website')
+    },
+    contact: function() {
+        this.echo('\nHey! If you want to discuss technology, talk about one of my blog posts, suggest an idea for my website or projects, or just want to say hello, please do not hesitate to contact me on any of the platforms below:\nMatrix: https://matrix.to/#/@mrbeebenson:matrix.org\nGitHub: https://github.com/mrbeebenson')
+    },
+    exit: function() {
+        window.close();
     }
 }, {
     greetings: '/home/mrbeebenson \nType "help" for a list of commands\n\nWelcome to my website!\n&bull; Please note that this website is currently in beta testing and does not currently work properly on Firefox Mobile.\nFor the original, working site please go to: https://mrbeebenson.github.io/old-website'
