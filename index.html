@@ -6,7 +6,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
 <link rel="stylesheet" href="style.css" />
-<script src="main.js"></script>
 </head>
 
 <body>
@@ -15,7 +14,7 @@
         
 $('body').terminal({
     help: function() {
-        this.echo('\nHere is a list of commands:\nhelp - Displays help text\nclear - Clears the display\nabout - Displays information about MrBeeBenson\nprojects - Displays information about my projects');
+        this.echo('\nHere is a list of commands:\nhelp - Displays help text\nclear - Clears the display\nrefresh - Refreshes the terminal (webpage)\nabout - Displays information about MrBeeBenson\nprojects - Displays information about my projects');
     },
     about: function() {
         this.echo('\nThis is my little home on the internet where I like to show off things I have written or created! Here I will likely talk about myself, anything relating to open-source software and GNU/Linux ecosystems and anything relating to software (including software I create myself!)');
@@ -25,7 +24,14 @@ $('body').terminal({
     },
     projects: function() {
         this.echo('\nMy projects:');
-        this.echo('\nRolling Rhino Remix\nhttps://rollingrhino.org\nI am the founder and current Project Lead of Rolling Rhino Remix. Rolling Rhino Remix is a Linux distribution that converts Ubuntu into a Rolling Release distribution. Rolling Rhino Remix has many distribution-specific features and utilities specifically created for the distribution.')
+        this.echo('\nRolling Rhino Remix\nhttps://rollingrhino.org\nI am the founder and current Project Lead of Rolling Rhino Remix. Rolling Rhino Remix is a Linux distribution that converts Ubuntu into a Rolling Release distribution. Rolling Rhino Remix has many distribution-specific features and utilities specifically created for the distribution.');
+        this.echo('\nSkyWM\nhttps://github.com/mrbeebenson/skywm\nskyWM is a minimalistic window manager written in Rust. skyWM takes inspiration from the Unix philosophy of doing one thing and doing it well.');
+        this.echo('\nSqribble\nhttps://sqribble.glitch.me\nSqribble is an open-source chatting application created for fun. There is nott necessarily too much point to using this other than that you are able to use it for a no-signup chat room.');
+        this.echo('\nMy collection of wallpapers\nhttps://mrbeebenson.github.io/wallpapers/\nI have created some desktop wallpapers for different Linux distributions and operating systems.');
+        this.echo('\nI also actively work on and contribute to other open source projects, you will be able to find all contributions I have made on my GitHub profile.\nhttps://github.com/mrbeebenson');
+    },
+    refresh: function() {
+        location.reload();
     }
 }, {
     greetings: '/home/mrbeebenson \nType "help" for a list of commands\n\nWelcome to my website!'

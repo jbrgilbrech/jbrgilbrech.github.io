@@ -48,7 +48,7 @@
      text-indent: -9999em !important;
      top: 0 !important;
      top: calc(var(--cursor-line, 0) * var(--size, 1) * (14px / var(--pixel-density, 1))) !important;
-     white-space: pre !important;
+     white-space: pre-wrap !important;
      width: 16px;
      width: calc(16px / var(--pixel-density, 1)) !important;
      z-index: 1000 !important;
@@ -61,7 +61,7 @@
      overflow: hidden;
      position: absolute;
      top: 0;
-     white-space: nowrap;
+     white-space: pre-wrap;
      width: 1px;
  }
  .cmd .cursor + span:empty,
@@ -167,14 +167,14 @@
  .cmd a[href],
  .terminal .terminal-output > :not(.raw) a[href],
  .terminal.external a[href] {
-     color: #37f;
-     color: var(--link-color, #37f);
+     color: #ff79c6;
+     color: var(--link-color, #ff79c6);
      cursor: pointer;
  }
  .cmd a[href]:not(.terminal-inverted),
  .terminal .terminal-output > :not(.raw) a[href]:not(.terminal-inverted),
  .terminal.external a[href]:not(.terminal-inverted) {
-     --color: var(--link-color, #37f);
+     --color: var(--link-color, #ff79c6);
      text-shadow: 0 0 calc(var(--glow) * 5px) var(--color, #ccc);
  }
  .terminal .terminal-output > :not(.raw) a[href].terminal-inverted,
@@ -185,8 +185,8 @@
  .cmd a[href]:hover,
  .terminal .terminal-output > :not(.raw) a[href]:hover,
  .terminal.external a[href]:hover {
-     background-color: #37f;
-     background-color: var(--link-color, #37f) !important;
+     background-color: #ff79c6;
+     background-color: var(--link-color, #ff79c6) !important;
      color: #282a36;
      color: var(--background, #282a36) !important;
      text-decoration: none;
@@ -194,16 +194,16 @@
  .cmd a[href] span,
  .terminal .terminal-output > :not(.raw) a[href] span,
  .terminal.external a[href] span {
-     --color: var(--link-color, #37f);
-     color: #37f !important;
-     color: var(--link-color, #37f) !important;
+     --color: var(--link-color, #ff79c6);
+     color: #ff79c6 !important;
+     color: var(--link-color, #ff79c6) !important;
      text-decoration: underline;
  }
  .cmd a[href]:hover span,
  .terminal .terminal-output > :not(.raw) a[href]:hover span,
  .terminal.external a[href]:hover span {
-     background-color: #37f !important;
-     background-color: var(--link-color, #37f) !important;
+     background-color: #ff79c6 !important;
+     background-color: var(--link-color, #ff79c6) !important;
      color: #282a36 !important;
      color: var(--background, #282a36) !important;
      text-decoration: none;
@@ -237,7 +237,7 @@
  }
  .terminal .terminal-output > div:not(.raw) div {
      clear: both;
-     white-space: nowrap;
+     white-space: pre-wrap;
  }
  .cmd .cmd-prompt:empty,
  .cmd .cmd-prompt > span {
@@ -364,6 +364,7 @@
      margin-top: -1px;
  }
  .terminal-output > div.raw > div * {
+     white-space: pre-wrap;
      word-wrap: break-word;
      overflow-wrap: break-word !important;
      hyphens: manual !important;
@@ -410,7 +411,7 @@
      --original-color: var(--color, #bd93f9);
  }
  .cmd a[href] {
-     --original-color: var(--link-color, #37f);
+     --original-color: var(--link-color, #ff79c6);
  }
  @-webkit-keyframes terminal-blink {
      0%,
@@ -776,8 +777,8 @@
  }
  .terminal .terminal-output > :not(.raw) .terminal-error,
  .terminal .terminal-output > :not(.raw) .terminal-error * {
-     color: red;
-     color: var(--error-color, red);
+     color: #ff5555;
+     color: var(--error-color, #ff5555);
  }
  .tilda {
      left: 0;
@@ -992,7 +993,7 @@
  }
  .cmd .cursor-wrapper li {
      cursor: pointer;
-     white-space: nowrap;
+     white-space: pre-wrap;
  }
  .cmd .cursor-wrapper li:hover {
      background: #bd93f9;
