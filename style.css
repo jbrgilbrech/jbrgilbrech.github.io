@@ -15,7 +15,7 @@
  * Date: Fri, 20 May 2022 15:41:40 +0000
  */
 
- /* File edited by MrBeeBenson*/
+ /* File edited by Billy Gilbrech*/
  .cmd .format,
  .cmd-prompt,
  .cmd-prompt div,
@@ -161,51 +161,51 @@
  .cmd.cmd.cmd .inverted,
  .terminal .inverted,
  .terminal .terminal-inverted {
-     background-color: #bd93f9 !important;
-     color: #282a36 !important;
+     background-color: #FFFEFE !important;
+     color: #10162B !important;
  }
  .cmd a[href],
  .terminal .terminal-output > :not(.raw) a[href],
  .terminal.external a[href] {
-     color: #ff79c6;
-     color: var(--link-color, #ff79c6);
+     color: #94A2B9;
+     color: var(--link-color, #94A2B9);
      cursor: pointer;
  }
  .cmd a[href]:not(.terminal-inverted),
  .terminal .terminal-output > :not(.raw) a[href]:not(.terminal-inverted),
  .terminal.external a[href]:not(.terminal-inverted) {
-     --color: var(--link-color, #ff79c6);
+     --color: var(--link-color, #94A2B9);
      text-shadow: 0 0 calc(var(--glow) * 5px) var(--color, #ccc);
  }
  .terminal .terminal-output > :not(.raw) a[href].terminal-inverted,
  .terminal.external a[href].terminal-inverted {
      background: var(--color, #ccc);
-     text-shadow: 0 0 calc(var(--glow) * 5px) var(--background, #282a36);
+     text-shadow: 0 0 calc(var(--glow) * 5px) var(--background, #10162B);
  }
  .cmd a[href]:hover,
  .terminal .terminal-output > :not(.raw) a[href]:hover,
  .terminal.external a[href]:hover {
-     background-color: #ff79c6;
-     background-color: var(--link-color, #ff79c6) !important;
-     color: #282a36;
-     color: var(--background, #282a36) !important;
+     background-color: #94A2B9;
+     background-color: var(--link-color, #94A2B9) !important;
+     color: #10162B;
+     color: var(--background, #10162B) !important;
      text-decoration: none;
  }
  .cmd a[href] span,
  .terminal .terminal-output > :not(.raw) a[href] span,
  .terminal.external a[href] span {
-     --color: var(--link-color, #ff79c6);
-     color: #ff79c6 !important;
-     color: var(--link-color, #ff79c6) !important;
+     --color: var(--link-color, #94A2B9);
+     color: #94A2B9 !important;
+     color: var(--link-color, #94A2B9) !important;
      text-decoration: underline;
  }
  .cmd a[href]:hover span,
  .terminal .terminal-output > :not(.raw) a[href]:hover span,
  .terminal.external a[href]:hover span {
-     background-color: #ff79c6 !important;
-     background-color: var(--link-color, #ff79c6) !important;
-     color: #282a36 !important;
-     color: var(--background, #282a36) !important;
+     background-color: #94A2B9 !important;
+     background-color: var(--link-color, #94A2B9) !important;
+     color: #10162B !important;
+     color: var(--background, #10162B) !important;
      text-decoration: none;
  }
  .cmd .cmd-cursor,
@@ -226,8 +226,8 @@
  }
  .bar.cmd .cmd-inverted,
  .bar.terminal .inverted {
-     box-shadow: -2px 0 0 -1px #bd93f9;
-     box-shadow: -2px 0 0 -1px var(--original-color, #bd93f9);
+     box-shadow: -2px 0 0 -1px #FFFEFE;
+     box-shadow: -2px 0 0 -1px var(--original-color, #FFFEFE);
  }
  .cmd .cmd-prompt,
  .terminal,
@@ -292,8 +292,8 @@
  .cmd span[data-text]:not(.cmd-inverted):not(.token):not(.emoji),
  .terminal,
  terminal-output > div:not(.raw) div > span:not(.token):not(.inverted):not(.terminal-inverted):not(.cmd-inverted):not(.terminal-error):not(.emoji) {
-     background-color: #282a36;
-     color: #bd93f9;
+     background-color: #10162B;
+     color: #FFFEFE;
  }
  .cmd span[data-text] span,
  .terminal span[data-text] span {
@@ -389,7 +389,7 @@
      border-collapse: collapse;
  }
  .terminal td {
-     border: 1px solid #bd93f9;
+     border: 1px solid #FFFEFE;
  }
  .cmd span[data-text]:not(.emoji):not(.fa):not(.fas):not(.far) span {
      background-color: inherit;
@@ -408,54 +408,54 @@
      overflow: hidden;
  }
  .cmd {
-     --original-color: var(--color, #bd93f9);
+     --original-color: var(--color, #FFFEFE);
  }
  .cmd a[href] {
-     --original-color: var(--link-color, #ff79c6);
+     --original-color: var(--link-color, #94A2B9);
  }
  @-webkit-keyframes terminal-blink {
      0%,
      50% {
-         background-color: #bd93f9;
-         background-color: var(--original-color, #bd93f9);
-         -webkit-box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #bd93f9);
-         box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #bd93f9);
-         color: #282a36;
-         color: var(--background, #282a36);
+         background-color: #FFFEFE;
+         background-color: var(--original-color, #FFFEFE);
+         -webkit-box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #FFFEFE);
+         box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #FFFEFE);
+         color: #10162B;
+         color: var(--background, #10162B);
      }
      50.1%,
      to {
          background-color: inherit;
          color: inherit;
-         color: var(--original-background, var(--original-color, #bd93f9));
+         color: var(--original-background, var(--original-color, #FFFEFE));
      }
  }
  @-moz-keyframes terminal-blink {
      0%,
      50% {
-         background-color: #bd93f9;
-         background-color: var(--original-color, #bd93f9);
-         -webkit-box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #bd93f9);
-         box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #bd93f9);
-         color: #282a36;
-         color: var(--background, #282a36);
+         background-color: #FFFEFE;
+         background-color: var(--original-color, #FFFEFE);
+         -webkit-box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #FFFEFE);
+         box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #FFFEFE);
+         color: #10162B;
+         color: var(--background, #10162B);
      }
      50.1%,
      to {
          background-color: inherit;
          color: inherit;
-         color: var(--original-background, var(--original-color, #bd93f9));
+         color: var(--original-background, var(--original-color, #FFFEFE));
      }
  }
  @keyframes terminal-blink {
      0%,
      50% {
-         background-color: #bd93f9;
-         background-color: var(--original-color, #bd93f9);
-         -webkit-box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #bd93f9);
-         box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #bd93f9);
-         color: #282a36;
-         color: var(--background, #282a36);
+         background-color: #FFFEFE;
+         background-color: var(--original-color, #FFFEFE);
+         -webkit-box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #FFFEFE);
+         box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #FFFEFE);
+         color: #10162B;
+         color: var(--background, #10162B);
      }
      50.1%,
      to {
@@ -463,19 +463,19 @@
          -webkit-box-shadow: none;
          box-shadow: none;
          color: inherit;
-         color: var(--original-background, var(--original-color, #bd93f9));
+         color: var(--original-background, var(--original-color, #FFFEFE));
      }
  }
  @-webkit-keyframes terminal-glow {
      0%,
      50% {
-         background-color: #bd93f9;
-         background-color: var(--original-color, #bd93f9);
-         box-shadow: 0 0 3px #bd93f9;
-         -webkit-box-shadow: 0 0 3px var(--color, #bd93f9);
-         box-shadow: 0 0 3px var(--color, #bd93f9);
-         color: #282a36;
-         color: var(--background, #282a36);
+         background-color: #FFFEFE;
+         background-color: var(--original-color, #FFFEFE);
+         box-shadow: 0 0 3px #FFFEFE;
+         -webkit-box-shadow: 0 0 3px var(--color, #FFFEFE);
+         box-shadow: 0 0 3px var(--color, #FFFEFE);
+         color: #10162B;
+         color: var(--background, #10162B);
      }
      50.1%,
      to {
@@ -488,13 +488,13 @@
  @-moz-keyframes terminal-glow {
      0%,
      50% {
-         background-color: #bd93f9;
-         background-color: var(--original-color, #bd93f9);
-         box-shadow: 0 0 3px #bd93f9;
-         -moz-box-shadow: 0 0 3px var(--color, #bd93f9);
-         box-shadow: 0 0 3px var(--color, #bd93f9);
-         color: #282a36;
-         color: var(--background, #282a36);
+         background-color: #FFFEFE;
+         background-color: var(--original-color, #FFFEFE);
+         box-shadow: 0 0 3px #FFFEFE;
+         -moz-box-shadow: 0 0 3px var(--color, #FFFEFE);
+         box-shadow: 0 0 3px var(--color, #FFFEFE);
+         color: #10162B;
+         color: var(--background, #10162B);
      }
      50.1%,
      to {
@@ -507,12 +507,12 @@
  @keyframes terminal-glow {
      0%,
      50% {
-         background-color: #bd93f9;
-         background-color: var(--original-color, #bd93f9);
-         box-shadow: 0 0 3px #bd93f9;
-         box-shadow: 0 0 3px var(--color, #bd93f9);
-         color: #282a36;
-         color: var(--background, #282a36);
+         background-color: #FFFEFE;
+         background-color: var(--original-color, #FFFEFE);
+         box-shadow: 0 0 3px #FFFEFE;
+         box-shadow: 0 0 3px var(--color, #FFFEFE);
+         color: #10162B;
+         color: var(--background, #10162B);
      }
      50.1%,
      to {
@@ -524,8 +524,8 @@
  @-webkit-keyframes terminal-bar {
      0%,
      50% {
-         box-shadow: -2px 0 0 -1px #bd93f9;
-         box-shadow: -2px 0 0 -1px var(--original-color, #bd93f9);
+         box-shadow: -2px 0 0 -1px #FFFEFE;
+         box-shadow: -2px 0 0 -1px var(--original-color, #FFFEFE);
      }
      50.1%,
      to {
@@ -535,8 +535,8 @@
  @-moz-keyframes terminal-bar {
      0%,
      50% {
-         box-shadow: -2px 0 0 -1px #bd93f9;
-         box-shadow: -2px 0 0 -1px var(--original-color, #bd93f9);
+         box-shadow: -2px 0 0 -1px #FFFEFE;
+         box-shadow: -2px 0 0 -1px var(--original-color, #FFFEFE);
      }
      50.1%,
      to {
@@ -546,8 +546,8 @@
  @keyframes terminal-bar {
      0%,
      50% {
-         box-shadow: -2px 0 0 -1px #bd93f9;
-         box-shadow: -2px 0 0 -1px var(--original-color, #bd93f9);
+         box-shadow: -2px 0 0 -1px #FFFEFE;
+         box-shadow: -2px 0 0 -1px var(--original-color, #FFFEFE);
      }
      50.1%,
      to {
@@ -557,8 +557,8 @@
  @-webkit-keyframes terminal-underline {
      0%,
      50% {
-         box-shadow: 0 2px 0 #bd93f9;
-         box-shadow: 0 2px 0 var(--original-color, #bd93f9);
+         box-shadow: 0 2px 0 #FFFEFE;
+         box-shadow: 0 2px 0 var(--original-color, #FFFEFE);
      }
      50.1%,
      to {
@@ -568,8 +568,8 @@
  @-moz-keyframes terminal-underline {
      0%,
      50% {
-         box-shadow: 0 2px 0 #bd93f9;
-         box-shadow: 0 2px 0 var(--original-color, #bd93f9);
+         box-shadow: 0 2px 0 #FFFEFE;
+         box-shadow: 0 2px 0 var(--original-color, #FFFEFE);
      }
      50.1%,
      to {
@@ -579,8 +579,8 @@
  @keyframes terminal-underline {
      0%,
      50% {
-         box-shadow: 0 2px 0 #bd93f9;
-         box-shadow: 0 2px 0 var(--original-color, #bd93f9);
+         box-shadow: 0 2px 0 #FFFEFE;
+         box-shadow: 0 2px 0 var(--original-color, #FFFEFE);
      }
      50.1%,
      to {
@@ -590,34 +590,34 @@
  @-webkit-keyframes terminal-none {
      0%,
      to {
-         background-color: #bd93f9;
-         background-color: var(--original-color, #bd93f9);
-         -webkit-box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #bd93f9);
-         box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #bd93f9);
-         color: #282a36;
-         color: var(--background, #282a36);
+         background-color: #FFFEFE;
+         background-color: var(--original-color, #FFFEFE);
+         -webkit-box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #FFFEFE);
+         box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #FFFEFE);
+         color: #10162B;
+         color: var(--background, #10162B);
      }
  }
  @-moz-keyframes terminal-none {
      0%,
      to {
-         background-color: #bd93f9;
-         background-color: var(--original-color, #bd93f9);
-         -webkit-box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #bd93f9);
-         box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #bd93f9);
-         color: #282a36;
-         color: var(--background, #282a36);
+         background-color: #FFFEFE;
+         background-color: var(--original-color, #FFFEFE);
+         -webkit-box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #FFFEFE);
+         box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #FFFEFE);
+         color: #10162B;
+         color: var(--background, #10162B);
      }
  }
  @keyframes terminal-none {
      0%,
      to {
-         background-color: #bd93f9;
-         background-color: var(--original-color, #bd93f9);
-         -webkit-box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #bd93f9);
-         box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #bd93f9);
-         color: #282a36;
-         color: var(--background, #282a36);
+         background-color: #FFFEFE;
+         background-color: var(--original-color, #FFFEFE);
+         -webkit-box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #FFFEFE);
+         box-shadow: 0 0 calc(var(--glow) * 3px) var(--color, #FFFEFE);
+         color: #10162B;
+         color: var(--background, #10162B);
      }
  }
  .underline-animation .cmd .cmd-cursor .emoji,
@@ -660,35 +660,35 @@
      @keyframes terminal-blink {
          0%,
          50% {
-             background-color: var(--original-color, #bd93f9);
-             color: var(--background, #282a36);
+             background-color: var(--original-color, #FFFEFE);
+             color: var(--background, #10162B);
          }
          50.1%,
          to {
-             background-color: var(--background, #282a36);
-             color: var(--original-color, #bd93f9);
+             background-color: var(--background, #10162B);
+             color: var(--original-color, #FFFEFE);
          }
      }
      @keyframes terminal-bar {
          0%,
          50% {
-             border-left-color: var(--color, #bd93f9);
+             border-left-color: var(--color, #FFFEFE);
          }
          50.1%,
          to {
-             border-left-color: var(--background, #282a36);
+             border-left-color: var(--background, #10162B);
          }
      }
      @keyframes terminal-underline {
          0%,
          50% {
-             border-bottom-color: var(--color, #bd93f9);
+             border-bottom-color: var(--color, #FFFEFE);
              line-height: 12px;
              line-height: calc(var(--size, 1) * (12px / var(--pixel-density, 1)));
          }
          50.1%,
          to {
-             border-bottom-color: var(--background, #282a36);
+             border-bottom-color: var(--background, #10162B);
              line-height: 12px;
              line-height: calc(var(--size, 1) * (12px / var(--pixel-density, 1)));
          }
@@ -704,13 +704,13 @@
      @-ms-keyframes terminal-blink {
          0%,
          50% {
-             background-color: #bd93f9;
-             color: #282a36;
+             background-color: #FFFEFE;
+             color: #10162B;
          }
          50.1%,
          to {
-             background-color: #282a36;
-             color: #bd93f9;
+             background-color: #10162B;
+             color: #FFFEFE;
          }
      }
  }
@@ -730,8 +730,8 @@
  .terminal h6::-moz-selection,
  .terminal pre::-moz-selection,
  .terminal td::-moz-selection {
-     background-color: #bd93f9;
-     color: #282a36;
+     background-color: #FFFEFE;
+     color: #10162B;
  }
  .terminal .cmd {
      pointer-events: none;
@@ -757,7 +757,7 @@
  .terminal pre::selection,
  .terminal td::selection {
      background-color: hsla(0, 0%, 67%, 0.99);
-     color: #282a36;
+     color: #10162B;
  }
  .cmd .emoji span::-moz-selection,
  .cmd .emoji::-moz-selection,
@@ -846,8 +846,8 @@
      .terminal-output > :not(.raw) div,
      .terminal-output > :not(.raw) span[data-text]:not(.token):not(.inverted):not(.terminal-inverted):not(.cmd-inverted):not(.terminal-error):not(.emoji),
      .terminal.external [data-text] {
-         background-color: var(--background, #282a36);
-         color: var(--color, #bd93f9);
+         background-color: var(--background, #10162B);
+         color: var(--color, #FFFEFE);
      }
      .cmd [data-text],
      .terminal [data-text] {
@@ -876,12 +876,12 @@
      .cmd.cmd.cmd .cmd-inverted,
      .cmd.cmd.cmd .inverted,
      .terminal .inverted {
-         background-color: var(--color, #bd93f9) !important;
-         color: var(--background, #282a36) !important;
+         background-color: var(--color, #FFFEFE) !important;
+         color: var(--background, #10162B) !important;
      }
      .cmd .cmd-cursor.cmd-blink {
-         background-color: var(--background, #282a36);
-         color: var(--color, #bd93f9);
+         background-color: var(--background, #10162B);
+         color: var(--color, #FFFEFE);
      }
      .cmd .cmd-cursor.cmd-blink .emoji,
      .cmd .cmd-cursor.cmd-blink .fa,
@@ -914,12 +914,12 @@
      .terminal h6::-moz-selection,
      .terminal pre::-moz-selection,
      .terminal td::-moz-selection {
-         background-color: var(--color, #bd93f9);
-         color: var(--background, #282a36);
+         background-color: var(--color, #FFFEFE);
+         color: var(--background, #10162B);
      }
      .terminal .terminal-output div div a::-moz-selection {
          background-color: var(--link-color, rgba(15, 96, 255, 0.99)) !important;
-         color: var(--background, #282a36) !important;
+         color: var(--background, #10162B) !important;
      }
      .terminal .terminal-output div div a:hover::-moz-selection {
          background-color: var(--link-color, rgba(2, 50, 144, 0.99)) !important;
@@ -940,11 +940,11 @@
      .terminal pre::selection,
      .terminal td::selection {
          background-color: var(--color, hsla(0, 0%, 67%, 0.99)) !important;
-         color: var(--background, #282a36) !important;
+         color: var(--background, #10162B) !important;
      }
      .terminal .terminal-output div div a::selection {
          background-color: var(--link-color, rgba(15, 96, 255, 0.99)) !important;
-         color: var(--background, #282a36) !important;
+         color: var(--background, #10162B) !important;
      }
      .terminal .terminal-output div div a:hover::selection {
          background-color: var(--link-color, rgba(2, 50, 144, 0.99)) !important;
@@ -963,7 +963,7 @@
      .terminal pre::selection,
      .terminal td::selection {
          background-color: hsla(0, 0%, 67%, 0.99);
-         color: #282a36;
+         color: #10162B;
      }
  }
  .cmd .style .token.string,
@@ -996,8 +996,8 @@
      white-space: pre-wrap;
  }
  .cmd .cursor-wrapper li:hover {
-     background: #bd93f9;
-     color: #282a36;
+     background: #FFFEFE;
+     color: #10162B;
  }
  .cursor-wrapper {
      position: relative;
@@ -1079,17 +1079,17 @@
      z-index: 500;
  }
  .terminal-scroller::-webkit-scrollbar {
-     background: var(--background, #282a36);
+     background: var(--background, #10162B);
      height: calc(6px / var(--pixel-density, 1));
      width: calc(6px / var(--pixel-density, 1));
  }
  .terminal-scroller::-webkit-scrollbar-thumb,
  .terminal-scroller::-webkit-scrollbar-thumb:hover {
-     background: var(--color, #bd93f9);
+     background: var(--color, #FFFEFE);
  }
  .terminal-scroller {
-     scrollbar-color: #bd93f9 #282a36;
-     scrollbar-color: var(--color, #bd93f9) var(--background, #282a36);
+     scrollbar-color: #FFFEFE #10162B;
+     scrollbar-color: var(--color, #FFFEFE) var(--background, #10162B);
      scrollbar-width: thin;
  }
  .cmd .token {

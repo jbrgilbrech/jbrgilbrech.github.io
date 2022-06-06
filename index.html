@@ -6,8 +6,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
 <link rel="stylesheet" href="style.css" />
-<title>MrBeeBenson</title>
-<link rel="shortcut icon" type="image/png" href="favicon.png" />
+<title>billyg.sh</title>
 </head>
 
 <body>
@@ -16,37 +15,44 @@
         
 $('body').terminal({
     help: function() {
-        this.echo('\nHere is a list of commands:\nhelp - Displays help text\nclear - Clears the display\nrefresh - Refreshes the terminal (webpage)\nexit - Closes the terminal (webpage)\nabout - Displays information about MrBeeBenson\nprojects - Displays information about my projects\ncontact - Provides my contact information');
+        this.echo('\nHere is a list of commands:\nhelp - Displays help text\nclear - Clears the display\nrefresh - Refreshes the terminal (webpage)\nexit - Closes the terminal (webpage)\nabout - Displays information about Billy Gilbrech\nprojects - Displays information about my projects\ncontact - Provides my contact information\nneofetch - Provides system specs');
     },
     about: function() {
-        this.echo('\nThis is my little home on the internet where I like to show off things I have written or created! Here I will likely talk about myself, anything relating to open-source software and GNU/Linux ecosystems and anything relating to software (including software I create myself!)');
-        this.echo('\nI am a software developer and information activist, I seek to promote accessible, reliable information about free and open source software in my blog posts and write-ups. I am 17 years old, and I am very passionate about computers and technology.');
-        this.echo('\nI first started learning website development in 2017 from school and fell in love with programming, from there I began to teach myself as much as I could. I was introduced to GNU/Linux and open source software in August 2020 and swapped from Windows 10 to Linux full-time in October 2020. I fell in love with open source software and the philosophy behind it.');
-        this.echo('\nI am the project lead and founder of Rolling Rhino Remix, a Linux distribution that converts Ubuntu into a rolling release.\nhttps://rollingrhino.org');
+        this.echo('\nJust a random website with some information about me!)');
+        this.echo('\nI am a system administrator, programmer, a network administrator. I am currently 19 years old, working at YUM! Brands, Inc. I am working as a Technical Analyst but hoping to move to a different position in the data center.');
+        this.echo('\nI first started using Linux back when I was 12. I started off with Ubuntu (pretty typical), moved over to RedHat and never turned back.');
+        this.echo('\nI am the web developer lead of Rolling Rhino Remix, a Linux distribution that converts Ubuntu into a rolling release.\nhttps://rollingrhino.org');
     },
     projects: function() {
         this.echo('\nMy projects:');
-        this.echo('\nRolling Rhino Remix\nhttps://rollingrhino.org\nI am the founder and current Project Lead of Rolling Rhino Remix. Rolling Rhino Remix is a Linux distribution that converts Ubuntu into a Rolling Release distribution. Rolling Rhino Remix has many distribution-specific features and utilities specifically created for the distribution.');
-        this.echo('\nSkyWM\nhttps://github.com/mrbeebenson/skywm\nskyWM is a minimalistic window manager written in Rust. skyWM takes inspiration from the Unix philosophy of doing one thing and doing it well.');
-        this.echo('\nSqribble\nhttps://sqribble.glitch.me\nSqribble is an open-source chatting application created for fun. There is nott necessarily too much point to using this other than that you are able to use it for a no-signup chat room.');
-        this.echo('\nMy collection of wallpapers\nhttps://mrbeebenson.github.io/wallpapers/\nI have created some desktop wallpapers for different Linux distributions and operating systems.');
-        this.echo('\nI also actively work on and contribute to other open source projects, you will be able to find all contributions I have made on my GitHub profile.\nhttps://github.com/mrbeebenson');
+        this.echo('\nRolling Rhino Remix\nhttps://rollingrhino.org\nI currently lead the web development team, former lead of rhino-update utility.');
+        this.echo('\nFedora Setup Script\nhttps://github.com/jbrgilbrech/fedora-setup\nUnmainted setup script for Fedora Linux, will be updating in the future.');
+        this.echo('\nI also actively work on and contribute to other open source projects, you will be able to find all contributions I have made on my GitHub profile.\nhttps://github.com/jbrgilbrech');
     },
     refresh: function() {
         this.echo('Refreshing...')
         location.reload();
     },
-    posts: function() {
-        this.echo('Blog posts are currently not ported to the new website, you can find them at:\nhttps://mrbeebenson.github.io/old-website')
-    },
     contact: function() {
-        this.echo('\nHey! If you want to discuss technology, talk about one of my blog posts, suggest an idea for my website or projects, or just want to say hello, please do not hesitate to contact me on any of the platforms below:\nMatrix: https://matrix.to/#/@mrbeebenson:matrix.org\nGitHub: https://github.com/mrbeebenson')
+        this.echo('\nHey! If you want to discuss technology, talk about one of my blog posts, suggest an idea for my website or projects, or just want to say hello, please do not hesitate to contact me on any of the platforms below:\nMatrix: https://matrix.to/#/@billygilbrech:matrix.org\nGitHub: https://github.com/jbrgilbrech')
+    },
+    neofetch: function() {
+        this.echo('\nroot@billy');
+        this.echo('OS: MacOS');
+        this.echo('Host: Apple MacBook Pro 16inch 512GB M1 Pro');
+        this.echo('Uptime: Who Sleeps?');
+        this.echo('Packages: Excessive Coffee');
+        this.echo('Shell: oh-my-zsh | starship.rs');
+        this.echo('Terminal: iTerm');
+        this.echo('CPU: Apple M1 Pro');
+        this.echo('GPU: Apple M1 Pro');
+        this.echo('Memory: Lacking');
     },
     exit: function() {
         window.close();
     }
 }, {
-    greetings: '/home/mrbeebenson \nType "help" for a list of commands\n\nWelcome to my website!\n&bull; Please note that this website is currently in beta testing and does not currently work properly on Firefox Mobile.\nFor the original, working site please go to: https://mrbeebenson.github.io/old-website'
+    greetings: '~/.information \nType "help" for a list of commands'
 });
 </script>
     
